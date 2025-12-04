@@ -34,21 +34,21 @@ Data was provided in two tables:
 # *1. Employees Table*
 | Column | Description |
 |--------|-------------|
-| EmployeeID 
-| EmployeeName 
-| PositionID 
-| ManagerID 
-| RecruitmentSource 
-| Salary
-| DateOfHire 
-| DateOfTermination 
+| EmployeeID | Unique employee identifier |
+| EmployeeName | Name of employee |
+| PositionID | Foreign key for position |
+| ManagerID | Reporting manager |
+| RecruitmentSource | Employee recruitment source |
+| Income | Employee monthly income |
+| DateOfHire | Hiring date |
+| DateOfTermination | Termination date (blank if active) |
 
 # *2. Positions Table*
 | Column | Description |
 |--------|-------------|
-| PositionID 
-| PositionName 
-| Department 
+| PositionID | Unique job position ID |
+| PositionName | Role name |
+| Department | Department name |
 
 ---
 
@@ -85,7 +85,7 @@ If DateOfTermination is null → "Active" Else → "Terminated".
 - Average Tenure
 
 # 2. Charts
-- Hiring and Attrition Trend Line Chart
+- Attrition Trend Line Chart
 - Active Employees And Attrition Employees Donut Chart
 - Recruitment Wise  Attrition Stacked Column Chart
 - Department-Wise Attrition Stacked Bar Chart
@@ -103,26 +103,22 @@ If DateOfTermination is null → "Active" Else → "Terminated".
 
 
  # Insights Gained
-- High overall attrition(33.4%) : Investigate top exists reasons,conduct stay interviews and improve retention drivers.
+- High overall attrition(33.4%) .
 
-- Production Department has highest attrition : Review workload,supervisor behaviour,shift patterns and provide targeted training
-  /support.
+- Production Department has highest attrition.
 
- - Technician and production roles show maximum exists : Recheck hiring quality,onboarding,job clarity and provide skill-focused
-   development programs.
+ - Technician and production roles show maximum exists. 
 
- - Employees with 1-3 years tenure leave the most : Strengthen early career engagement,mentorshipand structured career pathing 
-   during this period.
+ - Employees with 1-3 years tenure leave the most.
 
- - IT/Data analyst and software enginner show lower attrition : Study what works well in these teams and apply those best practices
-   across high risk department.
+ - IT/Data analyst and software enginner show lower attrition.
 
- - Google search recruits show highest attrition : Improve screen quality, revise job ads and evaluate candidate properly.
+ - Google search recruits show highest attrition.
 
- - Indeed recruits are more stable and stay longer : Increase hiring percentage from indeed and reinforce partnership with this 
-   source.       
+ - Indeed recruits are more stable and stay longer.       
 
 ---
+
 
 
 
